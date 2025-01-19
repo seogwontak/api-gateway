@@ -42,7 +42,7 @@
 
 1. 프로젝트 클론:
    ```bash
-   git clone https://github.com/yourusername/your-repo-name.git
+   git clone https://github.com/seogwontak/api-gateway.git
    ```
 
 
