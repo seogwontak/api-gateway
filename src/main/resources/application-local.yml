@@ -1,0 +1,44 @@
+#####################################################################################
+# ?? Properties
+# - ??? Properties ? ?? ?? ???? application property ? ???(???? ???)
+#####################################################################################
+server:
+  port: 23025
+  address: 0.0.0.0
+  servlet:
+    context-path: /
+    session:
+      persistent: false
+    http:
+      port: 23025
+
+############################################################
+# Spring Bean ?? ????(Default : false)
+# true  : ?? ??
+# false : ?? ??? BeanDefinitionOverrideException ??
+############################################################
+spring:
+  config:
+    activate:
+      on-profile: local
+  devtools:
+    livereload:
+      enabled: false
+    restart:
+      enabled: false
+  main:
+    allow-bean-definition-overriding: false
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 50MB
+      max-request-size: 50MB
+
+  ############################################################
+  # DataSource ??
+  ############################################################
+  datasource:
+    driverClassName:
+    url:
+    username:
+    password:
